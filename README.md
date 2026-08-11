@@ -1,3 +1,5 @@
+
+
 # Modern NLP with Hugging Face
  - This is a 4-week-long course that helps you understand Hugging Face's rich ecosystem and develop LLM models.
 ## Week 1: Datasets
@@ -54,12 +56,9 @@
    - [CLI-Script](https://github.com/Arunprakash-A/Modern-NLP-with-Hugging-Face/blob/main/Notebooks/eval_mmlu_cli.py)
    - We can use a CPU to evaluate the performance of language models on various benchmarks
    - Let's evaluate the performance of GPT-2 model (of course, you can use any model from HF) on the MMLU benchmark
-   - Execute ```python eval_mmlu_cli.py --model gpt2 --num_samples 25``` in the terminal.
+   - Execute ```python Notebooks/eval_mmlu_cli.py --model gpt2 --num_samples 25``` in the terminal.
    - This will print the score to the console and also generate a plot as shown below
    - ![gpt2-evaluate](https://raw.githubusercontent.com/Arunprakash-A/Modern-NLP-with-Hugging-Face/refs/heads/main/Notebooks/images/gpt2_mmlu_scores.png)
    - Can you see the problem with averaging the scores?
    - Evaluate OpenAI models on MMLU [Script](https://github.com/hendrycks/test/blob/master/evaluate.py)
-   - **Important Note**: Performance of Generative models is **sensitive** to subtle implementation details such as the format of prompts. Therefore, use [LM-Harness](https://github.com/EleutherAI/lm-evaluation-harness) for **comparing** the performance of models on standard academic benchmarks 
-
-   
-     
+   - **Important Note**: Performance of Generative models is **sensitive** to subtle implementation details such as the format of prompts. Therefore, use [LM-Harness](https://github.com/EleutherAI/lm-evaluation-harness) for **comparing** the performance of models on standard academic benchmarks
